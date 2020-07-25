@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "484a6c98-33c3-4a35-9f94-1d11768ddae2",
+		"name": "TESTMICRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"sittichat2\",\r\n    \"password\":\"123456789\",\r\n    \"firstname\":\"สิทธิชาติ\",\r\n    \"lastname\":\"เฟื่องปรางค์\",\r\n    \"phone\":\"0849900579\",\r\n    \"email\":\"yorku199@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"sittichat\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/users/5f1905bc44647844c690c5b2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"5f1905bc44647844c690c5b2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5010/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNpdHRpY2hhdCIsInRva2VuX2FjY2VzcyI6ImUyZjYyZTY3NDg4YWZiMmMzNzVmNzNjZTZlMzY5YmNhIiwiaWF0IjoxNTk1NDc1NzE0NDAzfQ.RCje51C2yzS-YFNmOSCUOdmPe6wDdNafG3EnUmqHF7M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":\"N088596354\",\r\n    \"product_title\": \"น้ำมันปลูกหนวดเครา\",\r\n    \"brand\":\"Beard Oil\",\r\n    \"model\":\"pro3\",\r\n    \"size\":\"50x20\",\r\n    \"cost\":150,\r\n    \"price\":500\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5010/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5010/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5010/api/products/5f191debb29a8a5c7d6f12c1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5010",
+					"path": [
+						"api",
+						"products",
+						"5f191debb29a8a5c7d6f12c1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5020/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5020",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bill_number\": \"12345\",\r\n    \"supplier\": \"นักขายในตำนาน\",\r\n    \"user_id\": \"5f1905bc44647844c690c5b2\",\r\n    \"order_date\": \"2020-07-01\",\r\n    \"order_status\":  \"Proceed\",\r\n    \"order_list\" :[{\r\n        \"product_id\": \"5f191debb29a8a5c7d6f12c1\",\r\n        \"product_number\": \"N088596354\",\r\n        \"qty\": 1,\r\n        \"price\": 500,\r\n        \"discount\": 20\r\n    },{\r\n        \"product_id\": \"5f191d50b29a8a5c7d6f12c0\",\r\n        \"product_number\": \"N023585\",\r\n        \"qty\": 1,\r\n        \"price\": 100,\r\n        \"discount\": 5\r\n    }]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5020/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5020",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders Cancel",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_status\": \"Cancel\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5020/api/orders/5f1949dfc58e9310b1921685",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5020",
+					"path": [
+						"api",
+						"orders",
+						"5f1949dfc58e9310b1921685"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNWYxOGZiZjhiZGIzYmUzYjMwZTZjN2RjIiwidXNlcm5hbWUiOiJzaXR0aWNoYXQiLCJ0b2tlbl9hY2Nlc3MiOiIyMzU0ZTI5OWUzOTU0NWQyNTQyMGVlNDVlMGFiNmZhNSIsImlhdCI6MTU5NTQ4MjM4MTUzNH0.DaJVpB2i6TfJnAbuf7gmZX52WRHrWfM1FeYNhsvr2vc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5020/api/orders/5f1949dfc58e9310b1921685",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5020",
+					"path": [
+						"api",
+						"orders",
+						"5f1949dfc58e9310b1921685"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
