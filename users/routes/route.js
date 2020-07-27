@@ -5,7 +5,7 @@ module.exports = function (app) {
 
     app.route('/api/users')
         .get(controller.requireJWTAuth, controller.getList)
-        .post(controller.requireJWTAuth, controller.create);
+        .post(controller.create);
 
     app.route('/api/users/:userId')
         .get(controller.requireJWTAuth, controller.read)
